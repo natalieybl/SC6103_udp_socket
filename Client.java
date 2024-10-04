@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Client {
     //private static final String SERVER_ADDRESS = "localhost";
-    private static final String SERVER_ADDRESS = "localhost";
-    //private static final String SERVER_ADDRESS = "your-public-server-url";
+    private static final String SERVER_ADDRESS = "https://sc6113-udp-socket.onrender.com";
     private static final int SERVER_PORT = 12345;
 
     public static void main(String[] args) {
