@@ -201,7 +201,7 @@ public class Server {
                     } else {
                         // Register the client for monitoring
                         SeatMonitor.registerClient(flightId, clientAddress, clientPort, monitorInterval);
-                        System.out.println("Client registered to monitor flight: " + flightId +"\n");
+                        System.out.println("Client registered to monitor flight: " + flightId);
                     }
                 } 
                 /*else if (opCode == 7) { // Exit 功能
@@ -268,7 +268,7 @@ public class Server {
                 if (clients != null) {
                     System.out.println("Notifying clients about updated seats for flight: " + flightId + ", Seats remaining: " + seatsAvailable);
                     for (Map.Entry<InetAddress, Integer> entry : clients.entrySet()) {
-                        System.out.println("Sending update to client: " + entry.getKey() + ":" + entry.getValue());
+                        System.out.println("Sending update to client: " + entry.getKey() + ":" + entry.getValue() + "\n");
                         try (DatagramSocket socket = new DatagramSocket()) {
                             String message = String.format("Updated seat availability for flight %s: %d seats remaining", flightId, seatsAvailable);
                             byte[] sendData = message.getBytes();
