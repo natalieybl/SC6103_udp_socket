@@ -193,7 +193,7 @@ public class Client {
 
                         //ByteBuffer byteBuffer = ByteBuffer.allocate(1024);
                         byteBuffer = ByteBuffer.allocate(1024);
-                        byteBuffer.put((byte) 5);  // 操作码：5表示监控座位
+                        byteBuffer.put((byte) 6);  // 操作码：5表示监控座位
                         byteBuffer.put(formatString(flightId, 10).getBytes());
                         byteBuffer.putInt(monitorInterval);
 
