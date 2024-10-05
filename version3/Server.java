@@ -201,7 +201,7 @@ public class Server {
                     } else {
                         // Register the client for monitoring
                         SeatMonitor.registerClient(flightId, clientAddress, clientPort, monitorInterval);
-                        System.out.println("Client registered to monitor flight: " + flightId);
+                        System.out.println("Client registered to monitor flight: " + flightId +"\n");
                     }
                 } 
                 /*else if (opCode == 7) { // Exit 功能
