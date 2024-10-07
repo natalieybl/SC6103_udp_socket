@@ -6,7 +6,7 @@ import java.util.InputMismatchException;
 
 
 public class Client {
-    private static final String SERVER_ADDRESS = "192.168.56.1";
+    private static final String SERVER_ADDRESS = "155.69.194.63";
     //private static final String SERVER_ADDRESS = "0.tcp.ap.ngrok.io";
 
     private static final int SERVER_PORT = 12345;
