@@ -258,7 +258,7 @@ public class Client {
         return String.format("%-" + length + "s", input);
     }
 
-    public class FlightUnmarshaller {
+    public static class FlightUnmarshaller {
         public static Flight unmarshall(byte[] data) {
             String flightId = bytesToString(data, 0, 20);
             String departure = bytesToString(data, 20, 20);

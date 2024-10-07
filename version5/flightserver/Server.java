@@ -244,7 +244,7 @@ public class Server {
     }
 
     //Marshalling
-    public class FlightMarshaller {
+    public static class FlightMarshaller {
         public static byte[] marshall(Flight flight) {
             byte[] flightIdBytes = stringToBytes(flight.getFlightId(), 20);
             byte[] departureBytes = stringToBytes(flight.getDeparture(), 20);
