@@ -30,6 +30,7 @@ public class Server {
         reservations.put("FL123", new HashMap<>());
         reservations.put("FL456", new HashMap<>());
         reservations.put("FL789", new HashMap<>());
+        reservations.put("FL910", new HashMap<>());
     }
 
     public static void main(String[] args) {
