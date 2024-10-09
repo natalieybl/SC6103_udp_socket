@@ -201,7 +201,7 @@ public class Client {
             if (random.nextInt(10) > 0) {  // 90% 機率發送訊息
                 System.out.println("goooood0.1");
                 try {
-                    socket.setSoTimeout(7000);  // 7秒超时
+                    socket.setSoTimeout(17000);  // 7秒超时
                     DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, InetAddress.getByName(SERVER_ADDRESS), SERVER_PORT);
                     socket.send(sendPacket);
                     System.out.println("Request sent: " + new String(sendData, StandardCharsets.UTF_8).trim() + "\n");
@@ -211,7 +211,7 @@ public class Client {
                     System.out.println("goooood5");
                     DatagramPacket receivePacket = new DatagramPacket(receiveBuffer, receiveBuffer.length);
                     System.out.println("goooood3");
-                    socket.setSoTimeout(7000);  // 7秒超时
+                    socket.setSoTimeout(17000);  // 7秒超时
                     System.out.println("goooood4");
                     socket.receive(receivePacket); //沒設置 timeout 的話這裡就會永遠卡死
                     String response = new String(receivePacket.getData()).trim();
